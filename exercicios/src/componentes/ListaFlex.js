@@ -2,7 +2,7 @@ import React from 'react'
 import { ScrollView, View, FlatList, Text } from 'react-native'
 
 const alunos = [
-    { id: 1, nome: 'João', nota: 7.9 },
+    {id: 1, nome: 'João', nota: 7.9 },
     { id: 2, nome: 'Ana', nota: 9.1 },
     { id: 3, nome: 'Bia', nota: 5.4 },
     { id: 4, nome: 'Claudia', nota: 7.6 },
@@ -35,8 +35,9 @@ const itemEstilo = {
     flexDirection: 'row',
     justifyContent: 'space-between',
 }
+
 export const Aluno = props =>
-<View style={itemEstilo}>
+    <View style={itemEstilo}>
         <Text>Nome: {props.nome}</Text>
         <Text style={{fontWeight: 'bold'}}>Nota: {props.nota}</Text>
     </View>
